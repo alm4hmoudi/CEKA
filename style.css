@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height:98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    width: 75%;
+    height: 85vh;
+    /* border: 2px solid rgba(138, 43, 226, 0.3); */
+    background-color: rgba(138, 43, 226, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px 2px rgba(138, 43, 226, 0.23);
+}
+
+.container2 nav {
+    width: 100%;
+    height: 80px;
+    margin-top: 15px;
+}
+
+.container2 nav .nav-right .menu-bar {
+    float: right;
+    width: 30% ;
+    display: none;
+}
+
+.container2 nav .menu-bar i {
+    color: azure;
+    margin-right: 20px;
+    font-size: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container2 nav .menu-bar i:hover {
+    color: blueviolet;
+}
+
+.container2 nav .nav-right {
+    width: 85%;
+    line-height: 65px;
+    float: right;
+}
+
+.container2 nav .nav-right .nav-menu-links {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.container2 nav .nav-right .nav-menu-links li {
+    float: right;
+    margin: 0 40px;
+}
+
+.container2 nav .nav-right .nav-menu-links li a {
+    text-decoration: none;
+    display: block;
+    color:aliceblue;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease-out;
+}
+
+.container2 nav .nav-right .nav-menu-links li a:hover {
+    color:blueviolet;
+}
+
+.container2 nav .nav-left {
+    float: left;
+    width: 15%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container2 nav a img {
+    width: 65px;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.content .right-content-social-link {
+    width: 10%;
+    float: right;
+    margin-top: 20px;
+}
+
+.content .right-content-social-link a {
+    display: block;
+    font-size: 42px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    color: blueviolet;
+    transition: 0.3s ease;
+}
+
+.content .right-content-social-link a:hover {
+    color: azure;
+}
+
+.content .middle-content-article {
+    width: 60%;
+    float: right;
+}
+
+.content .middle-content-article .name-web {
+    font-size: 40px;
+    color: #F9E400;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.content .middle-content-article .name-web:hover {
+    color: azure;
+}
+
+.content .middle-content-article .one-word {
+    font-size: 30px;
+    font-weight: bold;
+    color:azure;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
+}
+
+.content .middle-content-article .one-word:hover {
+    color: blueviolet;
+}
+
+.content .middle-content-article .article {
+    font-size: 20px;
+    color: aliceblue;
+    line-height: 30px;
+    width: 100%;
+    margin-bottom: 35px;
+    transition: 0.3s ease;
+}
+
+.content .middle-content-article .article:hover {
+    color: blueviolet;
+}
+
+.content .middle-content-article .btn {
+    width: 90%;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    color: azure;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.content .middle-content-article .btn:hover {
+    background: none;
+    border: 3px solid blueviolet;
+    
+}
+
+.content .left-content-logo {
+    float: left;
+    width: 30%;
+}
+
+.content .left-content-logo img {
+    width: 100%;
+}
+
+@media screen and (min-width:901px) and (max-width:1222px) {
+
+    body {
+        background-size: 2200px;
+    }
+
+    .container2 nav .nav-right .menu-bar {
+        display: block;
+    }
+
+    .container2 nav .nav-right .nav-menu-links {
+        overflow: hidden;
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: blueviolet;
+        width: 50%;
+        margin-top: 50px;
+        margin-right: 27px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li {
+        display:block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li a {
+        font-size: 18px;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li a:hover {
+        background-color:azure;
+        color: blueviolet;
+    }
+
+    .content {
+        margin-top: 70px;
+    }
+    
+}
+
+/* 769 px screen */
+
+@media screen and (min-width:731px) and (max-width:900px) {
+     
+    body {
+        background-size: 2000px;
+    }
+
+    .container2 {
+        width: 90%;
+        height: 85vh;
+        /* border: 2px solid rgba(138, 43, 226, 0.3); */
+        background-color: rgba(138, 43, 226, 0.2);
+        backdrop-filter: blur(6px);
+        border-radius: 15px;
+        box-shadow: 0px 0px 0px 2px rgba(138, 43, 226, 0.23);
+    }
+
+    /* .container2 nav .nav-right {
+        display: block;
+    } */
+
+    .container2 nav .nav-right {
+        width: 70%;
+        line-height: 65px;
+        float: right;
+    }
+
+    .container2 nav .nav-left {
+        width: 30%;
+        float: left;
+    }
+
+    .container2 nav .nav-left .ceka-logo img {
+        width: 95px;
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+
+    .container2 nav .nav-right .menu-bar {
+        display: block;
+    }
+
+    .container2 nav .nav-right .menu-bar i {
+        font-size: 70px;
+    }
+
+    .container2 nav .nav-right .nav-menu-links {
+        overflow: hidden;
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: blueviolet;
+        width: 80%;
+        margin-top: 50px;
+        margin-right: 29px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li {
+        display:block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li a {
+        font-size: 20px;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li a:hover {
+        background-color:azure;
+        color: blueviolet;
+    }
+
+    .content {
+        margin-top: 50px;
+    }
+
+    .content .right-content-social-link {
+         width: 100%;
+         float: right;
+         display:flex;
+    }
+
+    .content .right-content-social-link a {
+        font-size: 90px;
+        margin-right:100px;
+    }
+
+    .content .middle-content-article {
+        width: 90%;
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+
+    .content .middle-content-article .name-web {
+        font-size: 50px;
+    }
+
+    .content .middle-content-article .one-word {
+        font-size: 50px;
+    }
+
+    .content .middle-content-article .article {
+        font-size: 35px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+
+    .content .middle-content-article .btn {
+        width: 100%;
+        height: 90px;
+        margin-top: 20px;
+        font-size: 35px;
+    }
+
+    .content .left-content-logo {
+        position: absolute;
+        left: 30px;
+        top: 305px;
+    }
+
+    .content .left-content-logo {
+        position: absolute;
+        left: 30px;
+        top: 305px;
+    }
+    
+}
+
+/* 412 px screen */
+
+@media screen and (min-width:320px) and (max-width:730px) {
+     
+    body {
+        background-size: 1500px;
+    }
+
+    .container2 {
+        width: 90%;
+        height: 85vh;
+        /* border: 2px solid rgba(138, 43, 226, 0.3); */
+        background-color: rgba(138, 43, 226, 0.2);
+        backdrop-filter: blur(6px);
+        border-radius: 15px;
+        box-shadow: 0px 0px 0px 2px rgba(138, 43, 226, 0.23);
+    }
+
+    /* .container2 nav .nav-right {
+        display: block;
+    } */
+
+    .container2 nav .nav-right {
+        width: 70%;
+        line-height: 65px;
+        float: right;
+    }
+
+    .container2 nav .nav-left {
+        width: 30%;
+        line-height: 65px;
+        float: left;
+    }
+
+    .container2 nav .nav-left .ceka-logo img {
+        width: 75px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .container2 nav .nav-right .menu-bar {
+        display: block;
+    }
+
+    .container2 nav .nav-right .menu-bar i {
+        font-size: 60px;
+    }
+
+    .container2 nav .nav-right .nav-menu-links {
+        overflow: hidden;
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: blueviolet;
+        width: 80%;
+        margin-top: 50px;
+        margin-right: 29px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li {
+        display:block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li a {
+        font-size: 20px;
+    }
+
+    .container2 nav .nav-right .nav-menu-links li a:hover {
+        background-color:azure;
+        color: blueviolet;
+    }
+
+    .content {
+        margin-top: 50px;
+    }
+
+    .content .right-content-social-link {
+         width: 100%;
+         float: right;
+         display:flex;
+    }
+
+    .content .right-content-social-link a {
+        font-size: 60px;
+        margin-right: 45px;
+    }
+
+    .content .middle-content-article {
+        width: 90%;
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+
+    .content .middle-content-article .name-web {
+        font-size: 30px;
+    }
+
+    .content .middle-content-article .one-word {
+        font-size: 30px;
+    }
+
+    .content .middle-content-article .article {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+    .content .middle-content-article .btn {
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    .content .left-content-logo {
+        position: absolute;
+        left: 30px;
+        top: 305px;
+    }
+    
+}
